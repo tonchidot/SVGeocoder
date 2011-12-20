@@ -20,7 +20,7 @@
 
 @implementation SVGeocoder
 
-@synthesize delegate, requestString, responseData, rConnection, request;
+@synthesize delegate, title, subtitle, requestString, responseData, rConnection, request;
 
 
 #pragma mark -
@@ -153,6 +153,8 @@
         SVPlacemark *placemark = [[SVPlacemark alloc] initWithCoordinate:CLLocationCoordinate2DMake(lat, lng) addressDictionary:formattedAddressDict];
         
         placemark.formattedAddress = [placemarkDict objectForKey:@"formatted_address"];
+        placemark.title = self.title;
+        placemark.subtitle = self.subtitle;
         
         [placemarksArray addObject:placemark];
     }

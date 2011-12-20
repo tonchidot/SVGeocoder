@@ -15,5 +15,7 @@
 
 @property (nonatomic, readwrite) CLLocationCoordinate2D coordinate;
 @property (nonatomic, strong) NSString * formattedAddress;
+@property (nonatomic, strong) NSString * title;
+@property (nonatomic, strong) NSString * subtitle;
 
 @end

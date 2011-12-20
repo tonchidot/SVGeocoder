@@ -13,6 +13,8 @@
 
 @synthesize coordinate;
 @synthesize formattedAddress;
+@synthesize title;
+@synthesize subtitle;
 
 - (id)initWithCoordinate:(CLLocationCoordinate2D)aCoordinate addressDictionary:(NSDictionary *)addressDictionary {
 	
